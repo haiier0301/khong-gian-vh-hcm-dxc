@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liên hệ &amp; kết nối | Không gian Văn hóa Hồ Chí Minh</title>
+    <title>Không gian văn hóa trên nền số | Không gian Văn hóa Hồ Chí Minh</title>
     <meta
       name="description"
-      content="Liên kết tới các nguồn tư liệu, sách và bảo tàng chính thống về Chủ tịch Hồ Chí Minh."
+      content="Infographic Không gian văn hóa Hồ Chí Minh trên nền số — tủ sách điện tử, thư viện và bảo tàng 3D."
     />
     <link rel="stylesheet" href="./landing.css" />
   </head>
@@ -14,22 +14,49 @@
     <header class="landing-hero landing-hero--page" role="banner">
       <div class="landing-hero__bg" aria-hidden="true"></div>
       <div class="landing-hero__fade" aria-hidden="true"></div>
+      <a class="site-brand" href="./index.html" aria-label="Trung tâm Chuyển đổi số Thành phố Hồ Chí Minh — về trang chủ">
+        <img
+          class="site-brand__logo"
+          src="./Logo-full_ngang_trang.png"
+          alt="Trung tâm Chuyển đổi số Thành phố Hồ Chí Minh"
+          width="360"
+          height="147"
+          decoding="async"
+        />
+      </a>
       <div class="landing-hero__inner landing-hero__inner--page">
         <p class="landing-hero__label">Chuyên mục · Cộng đồng</p>
-        <h1 class="landing-hero__title landing-serif">Liên hệ &amp; kết nối</h1>
+        <h1 class="landing-hero__title landing-serif">Không gian văn hóa trên nền số</h1>
         <p class="landing-hero__desc">
-          Các cổng thông tin và thư viện số chính thống để bạn tiếp tục khám phá
-          tư liệu, sách và không gian 3D về Bác.
+          Mời bạn đọc tham gia đọc sách miễn phí và kết nối các kho tư liệu, sách
+          điện tử, bảo tàng 3D về Chủ tịch Hồ Chí Minh.
         </p>
       </div>
     </header>
 
     <main class="landing-page-main container">
-      <section class="block">
-        <h2>Nguồn tham khảo chính thống</h2>
-        <div id="contacts-grid" class="grid"></div>
+      <section class="block block--infographic" aria-labelledby="infographic-heading">
+        <h2 id="infographic-heading" class="visually-hidden">
+          Không gian văn hóa Hồ Chí Minh trên nền số
+        </h2>
+        <figure class="infographic">
+          <img
+            src="./infographic.jpg"
+            alt="Infographic Không gian văn hóa Hồ Chí Minh trên nền số: tủ sách hochiminh.vn, stbook.vn, thuviencoso.vn, sachweb.com và bảo tàng 3D."
+            width="1810"
+            height="2560"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+        <ul class="infographic-links visually-hidden">
+          <li><a href="https://hochiminh.vn/">Tủ sách điện tử Hồ Chí Minh</a></li>
+          <li><a href="https://stbook.vn/">Tủ sách điện tử Chủ tịch Hồ Chí Minh</a></li>
+          <li><a href="https://thuviencoso.vn/">Thư viện điện tử sách xã, phường, thị trấn</a></li>
+          <li><a href="https://sachweb.com/">Không gian văn hóa Hồ Chí Minh</a></li>
+          <li><a href="https://hochiminh.vn/bao-tang-3d">Bảo tàng Hồ Chí Minh 3D</a></li>
+        </ul>
       </section>
-
     </main>
 
     <footer class="landing-foot">
@@ -82,6 +109,5 @@
     </nav>
 
     <script src="./landing.js" defer></script>
-    <script src="./script.js"></script>
   </body>
 </html>

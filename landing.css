@@ -20,6 +20,36 @@ body.page-landing {
   padding-bottom: 88px;
 }
 
+body.page-redirect {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans", system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.page-redirect__inner {
+  text-align: center;
+  padding: 24px;
+}
+
+.site-brand--static {
+  position: static;
+  transform: none;
+  display: inline-block;
+  margin: 0 auto 20px;
+  padding: 10px 18px;
+  background: #1a1510;
+  border-radius: 10px;
+}
+
+.site-brand--static .site-brand__logo {
+  height: clamp(48px, 12vw, 64px);
+}
+
 body.page-landing * {
   box-sizing: border-box;
 }
@@ -82,11 +112,41 @@ body.page-landing * {
   pointer-events: none;
 }
 
+.site-brand {
+  position: absolute;
+  top: max(18px, env(safe-area-inset-top, 0px));
+  left: 50%;
+  z-index: 3;
+  display: block;
+  line-height: 0;
+  transform: translateX(-50%);
+  opacity: 0.98;
+  transition: opacity 0.2s ease;
+}
+
+.site-brand:hover {
+  opacity: 1;
+}
+
+.site-brand:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.site-brand__logo {
+  display: block;
+  height: clamp(44px, 10vw, 60px);
+  width: auto;
+  max-width: min(360px, 90vw);
+  object-fit: contain;
+}
+
 .landing-hero__inner {
   position: relative;
   z-index: 2;
   width: min(720px, 90%);
-  padding: 100px 0 140px;
+  padding: 120px 0 140px;
 }
 
 .landing-hero__label {
@@ -264,6 +324,22 @@ body.page-landing * {
   font-weight: 400;
   line-height: 1.55;
   color: var(--ink);
+}
+
+.landing-quote-block__meta {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.landing-quote-block__year {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--gold);
 }
 
 .landing-quote-block cite {
@@ -472,7 +548,7 @@ body.page-landing * {
 }
 
 .landing-hero__inner--page {
-  padding: 72px 0 96px;
+  padding: 88px 0 96px;
   width: min(880px, 92%);
   text-align: center;
 }
@@ -511,7 +587,7 @@ body.page-landing .block {
   background: #fff;
   border: 1px solid rgba(139, 115, 85, 0.18);
   border-radius: 14px;
-  padding: 26px 22px 28px;
+  padding: 22px 26px;
   margin: 0 0 22px;
   box-shadow: 0 8px 28px rgba(42, 37, 32, 0.06);
 }
@@ -818,6 +894,28 @@ body.page-landing .grid--museums {
 
 body.page-landing #bao-tang-3d {
   scroll-margin-top: 24px;
+}
+
+body.page-landing .block--infographic {
+  padding: 0;
+  overflow: hidden;
+}
+
+body.page-landing .block--infographic .infographic {
+  margin: 0;
+  line-height: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body.page-landing .block--infographic .infographic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
 }
 
 body.page-landing .timeline-gallery {
